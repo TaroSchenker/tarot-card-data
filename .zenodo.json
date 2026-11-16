@@ -1,0 +1,23 @@
+{
+  "title": "Tarot card data: all 78 cards (JSON and CSV)",
+  "upload_type": "dataset",
+  "description": "<p>Structured data for the 78 tarot cards: names, numbers, suits, ranks, eight keywords each, upright and reversed meanings, yes or no answers, elements and astrology, plus an image of each card from the 1909 Rider-Waite-Smith deck (public domain). JSON and CSV, CC BY 4.0, no key, open CORS. From Taro's Tarot.</p><p>Always-current copies, field notes and an embeddable daily card: <a href=\"https://tarostarot.com/tarot-card-data\">https://tarostarot.com/tarot-card-data</a></p><p>Credit line: Tarot card data by <a href=\"https://tarostarot.com/tarot-card-data\">Taro's Tarot</a> (CC BY 4.0). The card images are public domain.</p>",
+  "creators": [
+    {
+      "name": "Taro's Tarot",
+      "affiliation": "Known by One, LLC"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["tarot", "tarot cards", "Rider-Waite-Smith", "Major Arcana", "Minor Arcana", "divination", "symbolism", "open data", "JSON", "CSV"],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://tarostarot.com/tarot-card-data",
+      "relation": "isDocumentedBy",
+      "scheme": "url",
+      "resource_type": "other"
+    }
+  ]
+}

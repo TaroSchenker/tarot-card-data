@@ -1,0 +1,165 @@
+openapi: 3.0.3
+info:
+  title: Taro's Tarot card data
+  version: 1.0.0
+  description: >-
+    Structured data for the 78 tarot cards: names, numbers, suits, ranks, eight
+    keywords each, upright and reversed meanings, yes or no answers, elements
+    and astrology, plus an image URL for each card from the 1909
+    Rider-Waite-Smith deck (public domain). Two static files, JSON and CSV.
+    No key, no rate limit, CORS open (Access-Control-Allow-Origin: *).
+    Fetch a file once and keep it; it changes only when the data version does.
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  contact:
+    name: Taro's Tarot
+    url: https://tarostarot.com/tarot-card-data
+externalDocs:
+  description: Field notes, downloads and the daily card embed
+  url: https://tarostarot.com/tarot-card-data
+servers:
+  - url: https://tarostarot.com
+security: []
+paths:
+  /tarot-card-data/tarot-cards.json:
+    get:
+      operationId: getTarotCardsJson
+      summary: All 78 cards as JSON
+      description: One object per card in `cards`, with licence details at the top.
+      responses:
+        '200':
+          description: The data set
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TarotCardData'
+  /tarot-card-data/tarot-cards.csv:
+    get:
+      operationId: getTarotCardsCsv
+      summary: All 78 cards as CSV
+      description: >-
+        One row per card. Keywords are separated by "; ". Columns: id, name,
+        number, arcana, suit, rank, element, keywords, upright, reversed,
+        yes_no_upright, yes_no_reversed, yes_no_summary, planet, sign, decan,
+        dates, elemental_dignity, image, url.
+      responses:
+        '200':
+          description: The data set
+          content:
+            text/csv:
+              schema:
+                type: string
+components:
+  schemas:
+    TarotCardData:
+      type: object
+      required: [title, version, updated, source, license, attribution, cards]
+      properties:
+        title:
+          type: string
+        version:
+          type: string
+          example: 1.0.0
+        updated:
+          type: string
+          format: date
+        source:
+          type: string
+          format: uri
+        license:
+          type: string
+          example: CC BY 4.0
+        license_url:
+          type: string
+          format: uri
+        attribution:
+          type: string
+          description: The credit line to show with the data
+        images:
+          type: string
+        cards:
+          type: array
+          items:
+            $ref: '#/components/schemas/TarotCard'
+    TarotCard:
+      type: object
+      required: [id, name, number, arcana, suit, rank, keywords, upright, reversed, yes_no, element, astrology, image, url]
+      properties:
+        id:
+          type: string
+          description: URL slug, unique
+          example: the-fool
+        name:
+          type: string
+          example: The Fool
+        number:
+          type: integer
+          description: Major Arcana 0-21; minor cards 1-14 (ace 1, page 11, knight 12, queen 13, king 14)
+        arcana:
+          type: string
+          enum: [major, minor]
+        suit:
+          type: string
+          nullable: true
+          enum: [wands, cups, swords, pentacles, null]
+        rank:
+          type: string
+          nullable: true
+          enum: [ace, two, three, four, five, six, seven, eight, nine, ten, page, knight, queen, king, null]
+        keywords:
+          type: array
+          items:
+            type: string
+          minItems: 8
+          maxItems: 8
+        upright:
+          type: string
+          description: The upright meaning in one sentence
+        reversed:
+          type: string
+          description: The reversed meaning in one sentence
+        yes_no:
+          type: object
+          required: [upright, reversed, summary]
+          properties:
+            upright:
+              $ref: '#/components/schemas/YesNo'
+            reversed:
+              $ref: '#/components/schemas/YesNo'
+            summary:
+              type: string
+        element:
+          type: string
+          enum: [fire, water, air, earth]
+        astrology:
+          type: object
+          properties:
+            planet:
+              type: string
+              nullable: true
+            sign:
+              type: string
+              nullable: true
+            decan:
+              type: integer
+              nullable: true
+              description: Numbered minor cards 2-10 only
+            dates:
+              type: string
+              nullable: true
+            elemental_dignity:
+              type: string
+              nullable: true
+              description: Court cards only
+        image:
+          type: string
+          format: uri
+          description: Card image (WebP, 300 x 527 px), public domain
+        url:
+          type: string
+          format: uri
+          description: The card's full meaning page on tarostarot.com
+    YesNo:
+      type: string
+      enum: ['yes', 'no', 'maybe']

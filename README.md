@@ -71,7 +71,7 @@ Aces carry no astrology. Court cards carry their elemental dignity and no zodiac
     "planet": "Uranus",
     "sign": "Aquarius",
     "decan": null,
-    "dates": "January 20 - February 18",
+    "dates": null,
     "elemental_dignity": null
   },
   "image": "https://cdn.tarostarot.com/cards/00-TheFool.webp",

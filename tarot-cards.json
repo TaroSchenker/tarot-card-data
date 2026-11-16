@@ -37,7 +37,7 @@
         "planet": "Uranus",
         "sign": "Aquarius",
         "decan": null,
-        "dates": "January 20 - February 18",
+        "dates": null,
         "elemental_dignity": null
       },
       "image": "https://cdn.tarostarot.com/cards/00-TheFool.webp",
@@ -244,7 +244,7 @@
       },
       "element": "air",
       "astrology": {
-        "planet": "Venus",
+        "planet": "Mercury",
         "sign": "Gemini",
         "decan": null,
         "dates": "May 21 - June 20",
@@ -385,7 +385,7 @@
       "element": "fire",
       "astrology": {
         "planet": "Jupiter",
-        "sign": "Sagittarius",
+        "sign": "Sagittarius/Pisces",
         "decan": null,
         "dates": null,
         "elemental_dignity": null
@@ -457,7 +457,7 @@
         "planet": "Neptune",
         "sign": "Pisces",
         "decan": null,
-        "dates": "February 19 - March 20",
+        "dates": null,
         "elemental_dignity": null
       },
       "image": "https://cdn.tarostarot.com/cards/12-TheHangedMan.webp",
@@ -595,7 +595,7 @@
       "element": "fire",
       "astrology": {
         "planet": "Mars",
-        "sign": "Aries",
+        "sign": "Aries/Scorpio",
         "decan": null,
         "dates": null,
         "elemental_dignity": null
@@ -664,10 +664,10 @@
       },
       "element": "water",
       "astrology": {
-        "planet": "Moon",
+        "planet": "Neptune",
         "sign": "Pisces",
         "decan": null,
-        "dates": null,
+        "dates": "February 19 - March 20",
         "elemental_dignity": null
       },
       "image": "https://cdn.tarostarot.com/cards/18-TheMoon.webp",
@@ -770,7 +770,7 @@
       "element": "earth",
       "astrology": {
         "planet": "Saturn",
-        "sign": "Capricorn",
+        "sign": "Capricorn/Aquarius",
         "decan": null,
         "dates": null,
         "elemental_dignity": null
@@ -2663,7 +2663,7 @@
         "sign": null,
         "decan": null,
         "dates": null,
-        "elemental_dignity": "Air of Earth"
+        "elemental_dignity": "Fire of Earth"
       },
       "image": "https://cdn.tarostarot.com/cards/Pentacles12.webp",
       "url": "https://tarostarot.com/tarot-cards/knight-of-pentacles"
@@ -2733,7 +2733,7 @@
         "sign": null,
         "decan": null,
         "dates": null,
-        "elemental_dignity": "Fire of Earth"
+        "elemental_dignity": "Air of Earth"
       },
       "image": "https://cdn.tarostarot.com/cards/Pentacles14.webp",
       "url": "https://tarostarot.com/tarot-cards/king-of-pentacles"

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tarot-card-data"
+version = "1.0.0"
+description = "Free tarot card data for all 78 cards as JSON and CSV, with public-domain card images and a daily card embed."
+readme = "README.md"
+license = "CC-BY-4.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Taro's Tarot" }]
+keywords = ["tarot", "tarot cards", "rider-waite-smith", "dataset", "open data", "json", "csv"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Games/Entertainment",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.urls]
+Homepage = "https://tarostarot.com/tarot-card-data"
+Source = "https://github.com/TaroSchenker/tarot-card-data"
+
+[tool.hatch.build.targets.wheel]
+packages = ["tarot_card_data"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"tarot-cards.json" = "tarot_card_data/tarot-cards.json"
+"tarot-cards.csv" = "tarot_card_data/tarot-cards.csv"
+
+[tool.hatch.build.targets.sdist]
+include = ["tarot_card_data", "tarot-cards.json", "tarot-cards.csv", "README.md", "LICENSE", "pyproject.toml"]

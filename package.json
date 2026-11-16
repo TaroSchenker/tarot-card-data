@@ -1,0 +1,43 @@
+{
+  "name": "tarot-card-data",
+  "version": "1.0.0",
+  "description": "Free tarot card data for all 78 cards as JSON and CSV, with public-domain card images and a daily card embed.",
+  "keywords": [
+    "tarot",
+    "tarot-cards",
+    "rider-waite-smith",
+    "dataset",
+    "open-data",
+    "json",
+    "csv"
+  ],
+  "homepage": "https://tarostarot.com/tarot-card-data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaroSchenker/tarot-card-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TaroSchenker/tarot-card-data/issues"
+  },
+  "license": "CC-BY-4.0",
+  "author": "Taro's Tarot (https://tarostarot.com)",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./tarot-cards.json": "./tarot-cards.json",
+    "./tarot-cards.csv": "./tarot-cards.csv",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "tarot-cards.json",
+    "tarot-cards.csv",
+    "openapi.yaml"
+  ],
+  "sideEffects": false
+}
