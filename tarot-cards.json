@@ -1,7 +1,7 @@
 {
   "title": "Tarot card data: all 78 cards",
-  "version": "1.0.0",
-  "updated": "2026-11-12",
+  "version": "1.0.1",
+  "updated": "2026-11-19",
   "source": "https://tarostarot.com/tarot-card-data",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
@@ -1193,7 +1193,7 @@
         "sign": null,
         "decan": null,
         "dates": null,
-        "elemental_dignity": "Air of Fire"
+        "elemental_dignity": "Fire of Fire"
       },
       "image": "https://cdn.tarostarot.com/cards/Wands12.webp",
       "url": "https://tarostarot.com/tarot-cards/knight-of-wands"
@@ -1263,7 +1263,7 @@
         "sign": null,
         "decan": null,
         "dates": null,
-        "elemental_dignity": "Fire of Fire"
+        "elemental_dignity": "Air of Fire"
       },
       "image": "https://cdn.tarostarot.com/cards/Wands14.webp",
       "url": "https://tarostarot.com/tarot-cards/king-of-wands"

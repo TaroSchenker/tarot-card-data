@@ -10,7 +10,18 @@
   ],
   "license": "cc-by-4.0",
   "access_right": "open",
-  "keywords": ["tarot", "tarot cards", "Rider-Waite-Smith", "Major Arcana", "Minor Arcana", "divination", "symbolism", "open data", "JSON", "CSV"],
+  "keywords": [
+    "tarot",
+    "tarot cards",
+    "Rider-Waite-Smith",
+    "Major Arcana",
+    "Minor Arcana",
+    "divination",
+    "symbolism",
+    "open data",
+    "JSON",
+    "CSV"
+  ],
   "language": "eng",
   "related_identifiers": [
     {
@@ -19,5 +30,7 @@
       "scheme": "url",
       "resource_type": "other"
     }
-  ]
+  ],
+  "version": "1.0.1",
+  "publication_date": "2026-11-19"
 }

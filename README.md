@@ -1,5 +1,7 @@
 # Tarot card data: all 78 cards (JSON and CSV)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24281832.svg)](https://doi.org/10.5281/zenodo.24281832)
+
 Free, structured data for the 78 tarot cards: names, numbers, suits, ranks, keywords, upright and reversed meanings, yes or no answers, element and astrology, with a public-domain image of each card from the 1909 Rider-Waite-Smith deck.
 
 Made by [Taro's Tarot](https://tarostarot.com). The page with downloads, field notes and an embeddable daily card: **https://tarostarot.com/tarot-card-data**
@@ -13,6 +15,32 @@ Made by [Taro's Tarot](https://tarostarot.com). The page with downloads, field n
 | `images/` | 78 card images, WebP, 300 x 527 px (also as one [ZIP](https://cdn.tarostarot.com/downloads/tarot-card-images-1909-v1.zip)) |
 
 Always-current copies: [https://tarostarot.com/tarot-card-data/tarot-cards.json](https://tarostarot.com/tarot-card-data/tarot-cards.json) and [https://tarostarot.com/tarot-card-data/tarot-cards.csv](https://tarostarot.com/tarot-card-data/tarot-cards.csv). Both send `Access-Control-Allow-Origin: *`, so browser code on any site can fetch them. There is no key and no rate limit: fetch the file once and keep it.
+
+## Install
+
+```sh
+npm install tarot-card-data
+```
+
+```js
+const { cards } = require('tarot-card-data');
+```
+
+```sh
+pip install tarot-card-data
+```
+
+```python
+import tarot_card_data
+fool = tarot_card_data.get("the-fool")
+```
+
+## Other copies
+
+- Zenodo archive, to cite: [doi.org/10.5281/zenodo.24281832](https://doi.org/10.5281/zenodo.24281832) (this DOI always points at the newest version)
+- Hugging Face dataset: [huggingface.co/datasets/tarostarot/tarot-card-data](https://huggingface.co/datasets/tarostarot/tarot-card-data)
+- npm: [npmjs.com/package/tarot-card-data](https://www.npmjs.com/package/tarot-card-data), PyPI: [pypi.org/project/tarot-card-data](https://pypi.org/project/tarot-card-data/)
+- OpenAPI description of the two files: [openapi.yaml](openapi.yaml)
 
 ## Fields
 
@@ -114,4 +142,4 @@ Paste this where the card should appear. One cached script, no cookies, no track
 
 - **Card images**: public domain. See [LICENSE](LICENSE) for where the scans come from.
 
-Data version 2026-11-12. Exported from https://tarostarot.com; the page above always has the current version.
+Data version 1.0.1 (2026-11-19). Exported from https://tarostarot.com; the page above always has the current version.
