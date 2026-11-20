@@ -142,4 +142,4 @@ Paste this where the card should appear. One cached script, no cookies, no track
 
 - **Card images**: public domain. See [LICENSE](LICENSE) for where the scans come from.
 
-Data version 1.0.1 (2026-11-19). Exported from https://tarostarot.com; the page above always has the current version.
+Data version 1.0.2 (2026-11-20). Exported from https://tarostarot.com; the page above always has the current version.

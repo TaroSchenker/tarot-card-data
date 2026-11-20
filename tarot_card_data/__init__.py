@@ -11,7 +11,7 @@ import json
 from functools import lru_cache
 from pathlib import Path
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __all__ = ["load", "cards", "get", "csv_path", "json_path"]
 
 _HERE = Path(__file__).resolve().parent

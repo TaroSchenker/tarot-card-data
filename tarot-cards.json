@@ -1,7 +1,7 @@
 {
   "title": "Tarot card data: all 78 cards",
-  "version": "1.0.1",
-  "updated": "2026-11-19",
+  "version": "1.0.2",
+  "updated": "2026-11-20",
   "source": "https://tarostarot.com/tarot-card-data",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
@@ -2025,7 +2025,7 @@
       "yes_no": {
         "upright": "no",
         "reversed": "yes",
-        "summary": "No for now: bound loosely, blindfolded, and free to leave"
+        "summary": "No for now: bound at the arms, blindfolded, and free to walk"
       },
       "element": "air",
       "astrology": {
@@ -2173,7 +2173,7 @@
         "sign": null,
         "decan": null,
         "dates": null,
-        "elemental_dignity": "Air of Air"
+        "elemental_dignity": "Fire of Air"
       },
       "image": "https://cdn.tarostarot.com/cards/Swords12.webp",
       "url": "https://tarostarot.com/tarot-cards/knight-of-swords"
@@ -2243,7 +2243,7 @@
         "sign": null,
         "decan": null,
         "dates": null,
-        "elemental_dignity": "Fire of Air"
+        "elemental_dignity": "Air of Air"
       },
       "image": "https://cdn.tarostarot.com/cards/Swords14.webp",
       "url": "https://tarostarot.com/tarot-cards/king-of-swords"

@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Taro's Tarot card data
-  version: 1.0.1
+  version: 1.0.2
   description: >-
     Structured data for the 78 tarot cards: names, numbers, suits, ranks, eight
     keywords each, upright and reversed meanings, yes or no answers, elements
